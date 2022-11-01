@@ -25,5 +25,5 @@ let c = true;
 console.log(typeof c, c);
 let first_N = prompt('Як вас звати?');
 let middle_N = prompt('Як вас по батькові?');
-let age = prompt('Скільки вам років?');
+let age = +(prompt('Скільки вам років?'));
 console.log(first_N, middle_N, age);

@@ -116,3 +116,14 @@ if ((!!x || false) === false) {
     x = "default";
     console.log('x=', x);
 }
+// or
+x = null;
+if (!!x||false){
+    console.log('x=', x);
+}
+else {
+    x = "default";
+    console.log('x=', x);
+}
+
+

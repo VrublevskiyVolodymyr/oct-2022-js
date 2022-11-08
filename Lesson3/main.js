@@ -26,13 +26,13 @@ if (x != 0) {
 // (в першу, другу, третю или четверту частину години).
 
 let time = 14;
-if (time >= 0 & time <= 15) {
+if (time >= 0 && time <= 15) {
     console.log('I quarter');
-} else if (time >= 16 & time <= 30) {
+} else if (time >= 16 && time <= 30) {
     console.log('II quarter');
-} else if (time >= 31 & time <= 45) {
+} else if (time >= 31 && time <= 45) {
     console.log('III quarter');
-} else if (time >= 46 & time <= 59) {
+} else if (time >= 46 && time <= 59) {
     console.log('IV quarter');
 } else {
     console.log('Wrong number');
@@ -41,11 +41,11 @@ if (time >= 0 & time <= 15) {
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
 let day = 11;
-if (day >= 1 & day <= 10) {
+if (day >= 1 && day <= 10) {
     console.log('I decade');
-} else if (day >= 11 & day <= 20) {
+} else if (day >= 11 && day <= 20) {
     console.log('II decade');
-} else if (day >= 21 & day <= 31) {
+} else if (day >= 21 && day <= 31) {
     console.log('III decade');
 } else {
     console.log('Wrong number');

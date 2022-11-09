@@ -6,12 +6,12 @@ for (let i = 1; i <= 10; i++) {
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 document.write('<div></div>');
 
-for (i = 1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
     document.write(`<div> ${i} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique?</div>`);
 }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-i = 1;
+let i = 1;
 while (i<=20) {
     document.write('<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>');
     i++
@@ -19,7 +19,7 @@ while (i<=20) {
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 document.write('<div></div>');
 
-i = 1;
+ i = 1;
 while (i<=20) {
     document.write(`<h1>${i}Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>`);
     i++

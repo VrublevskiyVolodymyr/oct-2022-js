@@ -1,6 +1,6 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 function area_rectangle(a, b) {
-    return a + b;
+    return a*b;
 }
 let area_ret=area_rectangle(10, 20)
 console.log('area_rectangle=', area_ret);
@@ -114,7 +114,7 @@ let users1 = [
 printerArrayObject(users1);
 
 // - створити функцію яка повертає найменьше число з масиву
-function MinArray(array) {
+function minArray(array) {
     let min = array[0];
     for (const item of array) {
         if (item<min)
@@ -123,12 +123,12 @@ function MinArray(array) {
     return min
 }
 let arr2 = [2, 4, 6, 8, 9, 12, -1, 67];
-let a = MinArray(arr2);
+let a = minArray(arr2);
 console.log(a);
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-function SummArray(array) {
+function summArray(array) {
     let sum = 0;
     for (const item of array) {
         sum += item;
@@ -136,5 +136,5 @@ function SummArray(array) {
     return sum;
 }
 arr2 = [2, 4, 6, 8, 9, 12, -1, 67];
-let s = SummArray(arr2);
+let s = summArray(arr2);
 console.log(s);

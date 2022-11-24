@@ -291,6 +291,7 @@ let author = books.filter((value) => {
 for (let i = 0; i < author.length; i++) {
     console.log(author[i].title)
 }
+
 // - вісортувати книжки по кількості сторінок по зростанню
 let booksSort = books.sort((book1, book2) => {
     return book2.pageCount - book1.pageCount

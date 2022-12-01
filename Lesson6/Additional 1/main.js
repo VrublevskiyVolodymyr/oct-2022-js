@@ -81,26 +81,26 @@ let couples = sort.filter(value => (value % 2 === 0) && (value % 10 !== 0))
 console.log(couples);
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
-let line = 'Напишіть Функцію Яка Повертає Рядок'
+let line = 'напишіть функцію яка повертає рядок'
 
-function lineFirstUp(line) {
-    let s = 0;
-    let Up = 0;
-    line.trim()
-    for (let i = 0; i < line.length; i++) {
-        if (line[i] === ' ') {
-            s += 1
-        }
-        if ((line[i] === line[i].toUpperCase()) && (line[i] !== ' ')) {
-            Up += 1
-        }
-    }
-    if (s === Up - 1)
-        return line;
-    else return 'не кожне слово  починається з великої літери'
-}
-
-console.log(lineFirstUp(line))
+// function lineFirstUp(line) {
+//     let s = 0;
+//     let Up = 0;
+//     line.trim()
+//     for (let i = 0; i < line.length; i++) {
+//         if (line[i] === ' ') {
+//             s += 1
+//         }
+//         if ((line[i] === line[i].toUpperCase()) && (line[i] !== ' ')) {
+//             Up += 1
+//         }
+//     }
+//     if (s === Up - 1)
+//         return line;
+//     else return 'не кожне слово  починається з великої літери'
+// }
+line.split(" ").map(value => value[0].toUpperCase() + value.slice(1,value.length)).join(" ");
+console.log(line.split(" ").map(value => value[0].toUpperCase() + value.slice(1,value.length)).join(" "))
 // - Створити функцію-валідатор для адрес електронної пошти. Перевірка повинна включати в себе :данні до знака равлика(@), наявність равлика, крапку яка знаходиться не меньше ніж на 2 символ далі після равлика, функція не чутлива до регістру (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
 // Протестувати на значеннях
 // someemail@gmail.com

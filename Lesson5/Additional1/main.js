@@ -72,14 +72,14 @@ let appearN = (n) => {
 appearN(20)
 
 // - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
-let appearAB = (A, B) => {
+let appearAB = (a, b) => {
     let arr = [];
-    if (A < B) {
-        for (let i = A; i <= B; i++) {
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
             arr.push(i)
         }
-    } else {
-        for (let i = B; i <= A; i++) {
+    } else if (a > b) {
+        for (let i = a; i >= b; i--) {
             arr.push(i)
         }
     }

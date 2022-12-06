@@ -38,7 +38,7 @@ while (i < arr2.length) {
 //     2. перебрати його циклом for
 console.log('// 2. перебрати його циклом for');
 
-for (i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     console.log(arr2[i]);
 }
 
@@ -55,7 +55,7 @@ while (i < arr2.length) {
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 console.log('// 4. перебрати циклом for та вивести  числа тільки з непарним індексом');
 
-for (i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     if (i % 2)
         console.log(arr2[i]);
 }
@@ -73,7 +73,7 @@ while (i < arr2.length) {
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 console.log('// 6. перебрати циклом for та вивести  числа тільки парні  значення');
 
-for (i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     if (arr2[i] % 2 === 0)
         console.log(arr2[i]);
 }
@@ -81,7 +81,7 @@ for (i = 0; i < arr2.length; i++) {
 // 7. замінити кожне число кратне 3 на слово "okten"
 console.log('// 7. замінити кожне число кратне 3 на слово "okten"');
 
-for (i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     if (arr2[i] % 3 === 0)
         arr2[i] = "okten"
     console.log(arr2[i]);
@@ -111,7 +111,7 @@ while (i >= 0) {
 //     2. перебрати його циклом for, але в зворотньому циклі (с заду на перед), але в зворотньому циклі (с заду на перед)
 console.log('// 2. перебрати його циклом for, але в зворотньому циклі (с заду на перед)');
 
-for (i = arr2.length - 1; i >= 0; i--) {
+for (let i = arr2.length - 1; i >= 0; i--) {
     console.log(arr2[i]);
 }
 
@@ -128,7 +128,7 @@ while (i >= 0) {
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом, але в зворотньому циклі (с заду на перед)
 console.log('// 4. перебрати циклом for та вивести  числа тільки з непарним індексом, але в зворотньому циклі (с заду на перед)');
 
-for (i = arr2.length - 1; i >= 0; i--) {
+for (let i = arr2.length - 1; i >= 0; i--) {
     if (i % 2)
         console.log(arr2[i]);
 }
@@ -146,7 +146,7 @@ while (i >= 0) {
 // 6. перебрати циклом for та вивести  числа тільки парні  значення, але в зворотньому циклі (с заду на перед)
 console.log('// 6. перебрати циклом for та вивести  числа тільки парні  значення, але в зворотньому циклі (с заду на перед)');
 
-for (i = arr2.length - 1; i >= 0; i--) {
+for (let i = arr2.length - 1; i >= 0; i--) {
     if (arr2[i] % 2 === 0)
         console.log(arr2[i]);
 }
@@ -154,7 +154,7 @@ for (i = arr2.length - 1; i >= 0; i--) {
 // 7. замінити кожне число кратне 3 на слово "okten", але в зворотньому циклі (с заду на перед)
 console.log('// 7. замінити кожне число кратне 3 на слово "okten", але в зворотньому циклі (с заду на перед)');
 
-for (i = arr2.length - 1; i >= 0; i--) {
+for (let i = arr2.length - 1; i >= 0; i--) {
     if (arr2[i] % 3 === 0)
         arr2[i] = "okten"
     console.log(arr2[i]);
@@ -275,7 +275,7 @@ document.writeln('<p>');
 document.writeln('Створити цикл for на 100 ітерацій. Вивести тільки парні кроки.');
 document.writeln('<p>');
 
-for (i = 1; i <= 100; i = i + 1) {
+for (let i = 1; i <= 100; i = i + 1) {
     if (i % 2 === 0) {
         console.log(i);
         document.write(i + ' ');
@@ -288,7 +288,7 @@ document.writeln('<p>');
 document.writeln('Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки');
 document.writeln('<p>');
 
-for (i = 1; i <= 100; i = i + 1) {
+for (let i = 1; i <= 100; i = i + 1) {
     if (i % 2) {
         console.log(i);
         document.write(i + ' ');
@@ -328,7 +328,7 @@ let books = [
 ];
 let max_pageCount = 0;
 let max_book = '0';
-for (i = 0; i < books.length; i++) {
+for (let i = 0; i < books.length; i++) {
     if (max_pageCount < books[i].pageCount) {
         max_pageCount = books[i].pageCount;
         max_book = books[i].title;
@@ -346,7 +346,7 @@ for (i = 0; i < books.length; i++) {
         max_genre = books[i].genre.length;
     }
 }
-for (i = 0; i < books.length; i++) {
+for (let i = 0; i < books.length; i++) {
     if (max_genre === books[i].genre.length) {
         max_book_genre[max_book_genre.length] = books[i].title;
     }
@@ -363,7 +363,7 @@ for (i = 0; i < books.length; i++) {
         max_title = books[i].title.length;
     }
 }
-for (i = 0; i < books.length; i++) {
+for (let i = 0; i < books.length; i++) {
     if (max_title === books[i].title.length) {
         max_book_title[max_book_title.length] = books[i].title;
     }
@@ -381,7 +381,7 @@ for (i = 0; i < books.length; i++) {
         max_authors = books[i].authors.length;
     }
 }
-for (i = 0; i < books.length; i++) {
+for (let i = 0; i < books.length; i++) {
     if (max_authors === books[i].authors.length) {
         max_book_authors[max_book_authors.length] = books[i].title;
     }
@@ -393,7 +393,7 @@ console.log('// - знайти книжку/ки які писав 1 автор'
 
 let min_book_authors = [];
 let min_authors = 1;
-for (i = 0; i < books.length; i++) {
+for (let i = 0; i < books.length; i++) {
     if (min_authors === books[i].authors.length) {
         min_book_authors[min_book_authors.length] = books[i].title;
     }

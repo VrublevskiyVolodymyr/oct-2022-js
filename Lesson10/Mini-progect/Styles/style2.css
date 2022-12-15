@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1{ background: #585b40;
+    text-align: center;
+}
+.container{
+    background: #585b40;
+}
+.user{
+    background: #8e867c;
+    border: #090b0c 1px solid;
+}
+.contTitle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.title{
+    background: #726c6c;
+    width: 18%;
+    height: auto;
+    margin: 10px auto;
+    padding: 5px;
+    border: #b5a49d 1px solid;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.a{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.button{
+    background: #cec0bf;
+    font-size: 20px;
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}

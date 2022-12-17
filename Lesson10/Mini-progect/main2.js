@@ -11,31 +11,31 @@ divUser.classList.add('user');
 divCont.appendChild(divUser);
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then((response) => response.json())
-    .then(info => {
+    .then(user => {
             let ul = document.createElement('ul');
             ul.classList.add('userInfo');
-            for (const elem in info) {
+            for (const element in user) {
                 let li = document.createElement('li');
-                if (typeof (info[elem]) === 'object') {
-                    li.innerText = `${elem}:`;
+                if (typeof (user[element]) === 'object') {
+                    li.innerText = `${element}:`;
                 } else {
-                    li.innerText = `${elem}: ${info[elem]}`
+                    li.innerText = `${element}: ${user[element]}`
                 }
-                if (typeof (info[elem]) === 'object') {
+                if (typeof (user[element]) === 'object') {
                     let ul1 = document.createElement('ul');
-                    for (const element in info[elem]) {
+                    for (const value in user[element]) {
                         let li1 = document.createElement('li');
-                        if (typeof (info[elem][element]) === 'object') {
-                            li1.innerText = `${element}:`
+                        if (typeof (user[element][value]) === 'object') {
+                            li1.innerText = `${value}:`
                         } else {
-                            li1.innerText = `${element}: ${info[elem][element]}`
+                            li1.innerText = `${value}: ${user[element][value]}`
                         }
                         ul1.appendChild(li1);
-                        if (typeof (info[elem][element]) === 'object') {
+                        if (typeof (user[element][value]) === 'object') {
                             let ul2 = document.createElement('ul');
-                            for (const inf in info[elem][element]) {
+                            for (const inf in user[element][value]) {
                                 let li2 = document.createElement('li');
-                                li2.innerText = `${inf}: ${info[elem][element][inf]}`;
+                                li2.innerText = `${inf}: ${user[element][value][inf]}`;
                                 ul2.appendChild(li2);
                             }
                             li1.appendChild(ul2);

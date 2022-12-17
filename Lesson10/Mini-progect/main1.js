@@ -8,7 +8,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         let divCont=document.createElement("div");
         divCont.classList.add('container');
         document.body.appendChild(divCont)
-        for (let user of users) {
+        for (const user of users) {
             console.log(user)
             let div = document.createElement("div");
             div.classList.add('user');

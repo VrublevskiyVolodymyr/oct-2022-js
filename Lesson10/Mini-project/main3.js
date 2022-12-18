@@ -1,4 +1,3 @@
-
 // На странице post-details.html:
 // 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
 let url = new URL(location.href);
@@ -25,10 +24,9 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
 fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
     .then((response) => response.json())
     .then(comments => {
-
-        let divComents = document.createElement("div");
-        divComents.classList.add('comments');
-        divContainer.appendChild(divComents);
+            let divComents = document.createElement("div");
+            divComents.classList.add('comments');
+            divContainer.appendChild(divComents);
             for (comment of comments) {
                 let divComent = document.createElement('div');
                 divComent.classList.add('comment');

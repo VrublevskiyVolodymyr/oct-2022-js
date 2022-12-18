@@ -1,4 +1,3 @@
-
 //На странице user-details.html:
 // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
 let url = new URL(location.href);
@@ -14,25 +13,24 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(user => {
             let ul = document.createElement('ul');
             ul.classList.add('userInfo');
+
             for (const element in user) {
                 let li = document.createElement('li');
-                if (typeof (user[element]) === 'object') {
-                    li.innerText = `${element}:`;
-                } else {
+                if (typeof (user[element]) !== 'object') {
                     li.innerText = `${element}: ${user[element]}`
-                }
-                if (typeof (user[element]) === 'object') {
+                } else if (typeof (user[element]) === 'object') {
+                    li.innerText = `${element}:`;
                     let ul1 = document.createElement('ul');
+
                     for (const value in user[element]) {
                         let li1 = document.createElement('li');
-                        if (typeof (user[element][value]) === 'object') {
-                            li1.innerText = `${value}:`
-                        } else {
+                        if (typeof (user[element][value]) !== 'object') {
                             li1.innerText = `${value}: ${user[element][value]}`
                         }
-                        ul1.appendChild(li1);
                         if (typeof (user[element][value]) === 'object') {
+                            li1.innerText = `${value}:`
                             let ul2 = document.createElement('ul');
+
                             for (const inf in user[element][value]) {
                                 let li2 = document.createElement('li');
                                 li2.innerText = `${inf}: ${user[element][value][inf]}`;
@@ -40,6 +38,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                             }
                             li1.appendChild(ul2);
                         }
+                        ul1.appendChild(li1);
                     }
                     li.appendChild(ul1);
                 }
@@ -50,12 +49,12 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     );
 // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
 // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
-let button=document.createElement('button');
+let button = document.createElement('button');
 button.classList.add('button');
-button.innerText='post of current user';
-let divContTitle=document.createElement('div');
+button.innerText = 'post of current user';
+let divContTitle = document.createElement('div');
 divContTitle.classList.add('contTitle');
-divCont.append(button,divContTitle);
+divCont.append(button, divContTitle);
 button.onclick = function () {
     fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         .then((response) => response.json())

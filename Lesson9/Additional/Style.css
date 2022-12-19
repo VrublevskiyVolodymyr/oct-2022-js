@@ -1,0 +1,15 @@
+.wrap{
+    background: cornflowerblue;
+
+}
+div{
+    margin: 5px;
+    text-align: center;
+    border:black 1px solid;
+}
+.divrule{
+    background: #eef55a;
+    margin: 10px;
+    border:black 2px solid;
+
+}

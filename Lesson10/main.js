@@ -23,4 +23,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
         }
     })
 // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів) отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   ХХХ - айді користувача)
-//--->див main1.js
+//--->див main.js

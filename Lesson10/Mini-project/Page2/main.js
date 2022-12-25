@@ -65,7 +65,7 @@ button.onclick = function () {
                 div.innerText = `${post.title}`;
                 //  6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
                 let a = document.createElement('a');
-                a.href = `post-details.html?id=${post.id}&userId=${post.userId}`;
+                a.href = `../Page3/post-details.html?id=${post.id}&userId=${post.userId}`;
                 a.innerText = '   post-details'
                 div.appendChild(a);
                 divContTitle.appendChild(div)

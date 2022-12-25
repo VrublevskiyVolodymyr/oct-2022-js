@@ -19,6 +19,7 @@ h1 {
     background: #d3bdfd;
     border: #8d857c 1px solid;
     display: flex;
+    border-radius: 10px;
 }
 
 .comments {
@@ -44,5 +45,6 @@ h1 {
     border: #b5a49d 1px solid;
     background: #fdd6fd;
     display: flex;
+    border-radius: 10px;
 
 }

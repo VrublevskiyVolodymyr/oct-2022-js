@@ -7,10 +7,13 @@ h1{ background: #585b40;
 }
 .container{
     background: #585b40;
+    width: 100%;
+    height: auto;
 }
 .user{
     background: #8e867c;
     border: #090b0c 1px solid;
+    border-radius: 10px;
 }
 .contTitle{
     width: 100%;
@@ -30,6 +33,7 @@ h1{ background: #585b40;
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 .a{
     width: 100%;
@@ -42,4 +46,5 @@ h1{ background: #585b40;
     width: 90%;
     margin: 20px auto;
     display: block;
+    border-radius: 10px;
 }

@@ -1,0 +1,156 @@
+
+body {
+    padding: 10px;
+}
+
+.divNav {
+    background: #bbb3b3;
+    overflow: hidden;
+    display: flex;
+}
+
+.divMenu {
+    float: left;
+    overflow: hidden;
+}
+
+.divContLink {
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    min-width: 50px;
+}
+
+.divContLink1 {
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    min-width: 50px;
+}
+
+.active {
+    display: block;
+}
+
+.link {
+    background: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttonMenu {
+    background-color: inherit;
+    color: white;
+}
+
+.buttonMenu:hover {
+    background-color: red;
+}
+
+.link:hover {
+    background-color: #ddd;
+}
+
+.divMenu:hover .divContLink {
+    display: block;
+}
+
+.divBody {
+    display: none;
+}
+
+.divPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #b1b0af;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.active2 {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 796px;
+    padding: 10px 40px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+}
+
+.carousel img {
+    width: 260px;
+    height: 260px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 120px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 780px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 260px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}

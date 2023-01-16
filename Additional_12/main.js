@@ -103,7 +103,7 @@ a.innerText = 'На сторінку товарів';
 btn.onclick = () => {
     if(input1.value&&input2.value&&input3.value&&input4.value){
     const goods = JSON.parse(localStorage.getItem(goodsKey)) || [];
-    let  article={id:Math.round(Math.random() * 1000),name:input1.value,quantity:input2.value,price:input3.value,picture:input4.value};
+    let  article={id:Math.round(Math.random() * 100000),name:input1.value,quantity:input2.value,price:input3.value,picture:input4.value};
     goods.push(article);
     localStorage.setItem(goodsKey,JSON.stringify(goods));
    }
